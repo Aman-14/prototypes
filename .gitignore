@@ -1,0 +1,5 @@
+# Ignore Python __pycache__ folders in all subdirectories
+**/__pycache__/
+
+# Ignore Rust target folders in all subdirectories
+**/target/
