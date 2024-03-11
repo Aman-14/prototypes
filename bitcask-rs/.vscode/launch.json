@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'bitcask-rs'",
+      "cargo": {
+        "args": ["build", "--bin=bitcask-rs", "--package=bitcask-rs"],
+        "filter": {
+          "name": "bitcask-rs",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'bitcask-rs'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=bitcask-rs",
+          "--package=bitcask-rs"
+        ],
+        "filter": {
+          "name": "bitcask-rs",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
