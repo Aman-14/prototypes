@@ -1,3 +1,6 @@
+Bitcask is a high-performance, append-only storage engine designed for key-value data.
+It's known for its simplicity, efficiency, and ability to handle large amounts of data with low latency.
+
 ### Record Structure
 
 #### On Disk
