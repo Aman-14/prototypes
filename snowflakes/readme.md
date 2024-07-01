@@ -5,6 +5,8 @@ The timestamp is a 41-bit integer that represents the number of milliseconds sin
 
 The worker ID is a 10-bit integer that identifies the worker generating the ID, and the sequence number is a 12-bit integer that ensures uniqueness in case multiple IDs are generated within the same millisecond by the same worker.
 
+First one bit is unused
+
 ```
 0                                       41     51         64
 +---------------------------------------+------+-----------+
